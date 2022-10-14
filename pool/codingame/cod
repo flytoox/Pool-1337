@@ -1,0 +1,138 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+void lol (char *S,int j)
+{
+    char c = 'a',C='A';
+    int i=0;
+    // Write an answer using printf(). DON'T FORGET THE TRAILING \n
+    // To debug: fprintf(stderr, "Debug messages...\n");
+        if (S[j]>= '1'&& S[j] <='9' && S[j]){
+            while (i <= S[j]-48)
+            {
+                    printf("%d",i);
+                    i++;
+            }
+            j++;}
+         if (S[j]>= 'a'&& S[j] <='z' && S[j])
+         {
+                while (c <= S[j])
+            {
+                    printf("%c",c);
+                    c++;
+            }
+            j++;
+            }
+         if (S[j]>= 'A'&& S[j] <='Z' && S[j])  
+         {      
+         while (C <= S[j])
+            {
+                    printf("%c",C);
+                    C++;
+            }
+           j++; }
+           lol(S,j);
+           return ;
+}
+int main()
+{
+    char S[101],c = 'a',C='A';
+    scanf("%[^\n]", S);
+int i=0,j=0;
+ 
+     lol(S,0);
+    return 0;
+	}
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+
+int main()
+{
+    int N;
+    scanf("%d", &N);
+
+    // Write an answer using printf(). DON'T FORGET THE TRAILING \n
+    // To debug: fprintf(stderr, "Debug messages...\n");
+int i=2,res=0;
+while (i <= N)
+    {
+        if(i%2==0)
+            res = res+i;
+        i++;
+    }
+    printf("%d",res);
+
+    return 0;
+}
+
+
+
+
+
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+void lol (char *S,int j)
+{
+    char c = 'a',C='A';
+    int i=0;
+    // Write an answer using printf(). DON'T FORGET THE TRAILING \n
+    // To debug: fprintf(stderr, "Debug messages...\n");
+        if (S[j]>= '1'&& S[j] <='9' && S[j]){
+            while (i <= S[j]-48)
+            {
+                    printf("%d",i);
+                    i++;
+            }
+            j++;}
+         if (S[j]>= 'a'&& S[j] <='z' && S[j])
+         {
+                while (c <= S[j])
+            {
+                    printf("%c",c);
+                    c++;
+            }
+            j++;
+            }
+         if (S[j]>= 'A'&& S[j] <='Z' && S[j])
+         {
+         while (C <= S[j])
+            {
+                    printf("%c",C);
+                    C++;
+            }
+           j++; }
+           lol(S,j);
+           return ;
+}
+int main()
+{
+    char S[101],c = 'a',C='A';
+    scanf("%[^\n]", S);
+int i=0,j=0;
+
+     lol(S,0);
+    return 0;
+}
